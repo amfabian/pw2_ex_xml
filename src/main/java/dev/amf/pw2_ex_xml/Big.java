@@ -31,9 +31,23 @@ public interface Big {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "conversao", targetNamespace = "http://pw2_ex_xml.amf.dev/", className = "dev.amf.pw2_ex_xml.Conversao")
-    @ResponseWrapper(localName = "conversaoResponse", targetNamespace = "http://pw2_ex_xml.amf.dev/", className = "dev.amf.pw2_ex_xml.ConversaoResponse")
-    public double conversao(
+    @RequestWrapper(localName = "conversaoNOS", targetNamespace = "http://pw2_ex_xml.amf.dev/", className = "dev.amf.pw2_ex_xml.ConversaoNOS")
+    @ResponseWrapper(localName = "conversaoNOSResponse", targetNamespace = "http://pw2_ex_xml.amf.dev/", className = "dev.amf.pw2_ex_xml.ConversaoNOSResponse")
+    public double conversaoNOS(
+        @WebParam(name = "arg0", targetNamespace = "")
+        double arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns double
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "conversaoMPH", targetNamespace = "http://pw2_ex_xml.amf.dev/", className = "dev.amf.pw2_ex_xml.ConversaoMPH")
+    @ResponseWrapper(localName = "conversaoMPHResponse", targetNamespace = "http://pw2_ex_xml.amf.dev/", className = "dev.amf.pw2_ex_xml.ConversaoMPHResponse")
+    public double conversaoMPH(
         @WebParam(name = "arg0", targetNamespace = "")
         double arg0);
 

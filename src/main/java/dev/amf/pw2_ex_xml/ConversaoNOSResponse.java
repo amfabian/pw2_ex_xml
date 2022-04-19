@@ -3,20 +3,21 @@ package dev.amf.pw2_ex_xml;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for conversao complex type.
+ * <p>Java class for conversaoNOSResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="conversao">
+ * &lt;complexType name="conversaoNOSResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         &lt;element name="return" type="{http://www.w3.org/2001/XMLSchema}double"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,27 +27,28 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "conversao", propOrder = {
-    "arg0"
+@XmlType(name = "conversaoNOSResponse", propOrder = {
+    "_return"
 })
-public class Conversao {
+public class ConversaoNOSResponse {
 
-    protected double arg0;
+    @XmlElement(name = "return")
+    protected double _return;
 
     /**
-     * Gets the value of the arg0 property.
+     * Gets the value of the return property.
      * 
      */
-    public double getArg0() {
-        return arg0;
+    public double getReturn() {
+        return _return;
     }
 
     /**
-     * Sets the value of the arg0 property.
+     * Sets the value of the return property.
      * 
      */
-    public void setArg0(double value) {
-        this.arg0 = value;
+    public void setReturn(double value) {
+        this._return = value;
     }
 
 }

@@ -8,12 +8,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for conversaoResponse complex type.
+ * <p>Java class for conversaoNOSResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="conversaoResponse">
+ * &lt;complexType name="conversaoNOSResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -27,10 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "conversaoResponse", propOrder = {
+@XmlType(name = "conversaoNOSResponse", propOrder = {
     "_return"
 })
-public class ConversaoResponse {
+public class ConversaoNOSResponse {
 
     @XmlElement(name = "return")
     protected double _return;
