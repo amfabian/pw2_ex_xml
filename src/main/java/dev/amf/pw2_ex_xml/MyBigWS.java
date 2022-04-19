@@ -4,7 +4,7 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 
 @WebService(name = "Big", serviceName = "Big")
-public class MyWS {
+public class MyBigWS {
 
     @WebMethod
     public double conversao(double a){
